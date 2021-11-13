@@ -35,9 +35,7 @@
                 <RadioButton Content="Home"
                              Height="60"
                              Foreground="#272537"
-                             FontSize="16"
-                             VerticalAlignment="Stretch"
-                             HorizontalAlignment="Stretch"/>
+                             FontSize="16"/>
                 <RadioButton Content="Dashboard"
                              Height="60"
                              Foreground="#272537"
