@@ -48,11 +48,11 @@
                              Height="60"
                              Foreground="#272537"
                              FontSize="16"/>
-                <RadioButton Content="Help"
+                <RadioButton Content="Chat"
                              Height="60"
                              Foreground="#272537"
-                             FontSize="16"/>
-                <RadioButton Content="Contact us"
+                             FontSize="16" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Help"
                              Height="60"
                              Foreground="#272537"
                              FontSize="16"/>
