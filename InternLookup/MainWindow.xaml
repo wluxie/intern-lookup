@@ -3,74 +3,67 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:InternLookup"
+        xmlns:local="clr-namespace:InternLookup" 
+        xmlns:viewmodel="clr-namespace:InternLookup.MVVM.ViewModel"
         mc:Ignorable="d"
-        ResizeMode="NoResize"
+        ResizeMode="CanResizeWithGrip"
         Background="Transparent"
         AllowsTransparency="True"
-        Height="600" Width="960">
+        WindowStyle="None"
+        Height="650" Width="1200">
 
-    <Border Background="#FAF8F6">
+    <Window.DataContext>
+        <viewmodel:MainViewModel/>
+    </Window.DataContext>
+    
+    <Border Background="#36393F">
         <Grid>
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="80"/>
+                <RowDefinition Height="25"/>
 
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="InternVLOOKUP"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Foreground="#232737"
-                       FontSize="22" FontWeight="Bold"/>
-
-            <StackPanel Grid.Row="1">
-
-                <RadioButton Content="Home"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16"/>
-                <RadioButton Content="Dashboard"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16"/>
-                <RadioButton Content="Featured"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16"/>
-                <RadioButton Content="Discover"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16"/>
-                <RadioButton Content="Chat"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16" Checked="RadioButton_Checked"/>
-                <RadioButton Content="Help"
-                             Height="60"
-                             Foreground="#272537"
-                             FontSize="16"/>
-
-            </StackPanel>
-
-            <TextBox Width="250"
-                     Height="40"
-                     VerticalAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="5"
-                     Grid.Column="1"/>
-
-            <ContentControl Grid.Row="1"
-                            Grid.Column="1"
-                            Margin="10"
-                            Content="{Binding CurrentView}"/>
-
+            <Border Grid.ColumnSpan="2"
+                    Background="#252525"
+                    MouseDown="Border_MouseDown">
+                
+                <Grid HorizontalAlignment="Stretch">
+                    <Label Content="InternLookUp"
+                           Foreground="Gray"
+                           FontWeight="SemiBold"/>
+                    <StackPanel HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                        <Button Width="20" Height="20"
+                                Content="🗕"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Foreground="Gray"
+                                FontWeight="Bold"
+                                Margin="0,0,0,3"
+                                Click="ButtonMin_Click"/>
+                        <Button Width="20" Height="20"
+                                Content="☐"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Foreground="Gray"
+                                FontWeight="Bold"
+                                Click="ButtonMax_Click"/>
+                        <Button Width="20" Height="20"
+                                Content="⨉"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Foreground="Gray"
+                                FontWeight="Bold"
+                                Click="ButtonClose_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
         </Grid>
     </Border>
 </Window>
