@@ -64,6 +64,40 @@
                     </StackPanel>
                 </Grid>
             </Border>
+
+            <Grid Background="#2f3136"
+                  Grid.Row="1">
+                <StackPanel Grid.Row="1">
+
+                    <RadioButton Content="Home"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                    <RadioButton Content="Featured"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                    <RadioButton Content="Discover"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                    <RadioButton Content="Chat"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                    <RadioButton Content="Help"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+
+                </StackPanel>
+            </Grid>
+            
         </Grid>
     </Border>
 </Window>
