@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InternLookup" 
         xmlns:viewmodel="clr-namespace:InternLookup.MVVM.ViewModel"
+        xmlns:view="clr-namespace:InternLookup.MVVM.View"
         mc:Ignorable="d"
         ResizeMode="CanResizeWithGrip"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
-        Height="650" Width="1200">
+        Height="600" Width="960">
 
     <Window.DataContext>
         <viewmodel:MainViewModel/>
@@ -98,6 +99,10 @@
                 </StackPanel>
             </Grid>
             
+            <ContentControl Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="20"
+                                Content="{Binding CurrentView}"/>
         </Grid>
     </Border>
 </Window>

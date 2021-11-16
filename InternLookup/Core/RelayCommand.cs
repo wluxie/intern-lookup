@@ -5,8 +5,8 @@ namespace InternLookup.Core
 {
     class RelayCommand : ICommand
     {
-        private Action<object> varExecute;
-        private Func<object, bool> varCanExecute;
+        private readonly Action<object> varExecute;
+        private readonly Func<object, bool> varCanExecute;
 
         public event EventHandler CanExecuteChanged
         {
