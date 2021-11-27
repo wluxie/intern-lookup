@@ -70,17 +70,20 @@
                   Grid.Row="1">
                 <StackPanel Grid.Row="1">
 
+                    <RadioButton Content="Dashboard"
+                             Height="60"
+                             Foreground="White"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding LogoHomeCommand}"/>
                     <RadioButton Content="Home"
                              Height="60"
                              Foreground="White"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding HomeViewCommand}"/>
                     <RadioButton Content="Featured"
-                             Height="60"
-                             Foreground="White"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"/>
-                    <RadioButton Content="Discover"
                              Height="60"
                              Foreground="White"
                              FontSize="16"

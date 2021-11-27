@@ -18,6 +18,10 @@
                 <view:HomeView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:LogoHomeViewModel}">
+                <view:LogoHome/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

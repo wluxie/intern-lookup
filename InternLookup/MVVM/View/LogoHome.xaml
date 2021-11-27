@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="InternLookup.MVVM.View.LogoHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InternLookup.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="460" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Intern"
+                   Foreground="FloralWhite"
+                   FontSize="74"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,60,0,0"/>
+        <TextBlock Text="LOOKUP"
+                   Foreground="FloralWhite"
+                   FontSize="32"
+                   FontWeight="Light"
+                   HorizontalAlignment="Center"
+                   Margin="0,-15,0,100"/>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="0,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="200"
+                        Height="100"
+                        Background="#093145"
+                        CornerRadius="10"
+                        Margin="20">
+                    <StackPanel>
+                        <Button Content="Github" Height="100"
+                                Background="Transparent"
+                                FontSize="24"
+                                BorderThickness="0"
+                                Foreground="White"
+                                FontWeight="Bold" Click="Git_Button"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Width="200"
+                        Height="100"
+                        Background="#107896"
+                        CornerRadius="10"
+                        Margin="20">
+                    <StackPanel>
+                        <Button Content="Linkedin" Height="100"
+                                Background="Transparent"
+                                FontSize="24"
+                                BorderThickness="0"
+                                Foreground="White"
+                                FontWeight="Bold" Click="Linkedin_Button"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Width="200"
+                        Height="100"
+                        Background="#9A2617"
+                        CornerRadius="10"
+                        Margin="20">
+                    <StackPanel>
+                        <Button Content="Contact me" Height="100"
+                                Background="Transparent"
+                                FontSize="24"
+                                BorderThickness="0"
+                                Foreground="White"
+                                FontWeight="Bold" Click="Contact_Button"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+        
+    </StackPanel>
+</UserControl>

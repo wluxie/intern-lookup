@@ -10,11 +10,12 @@
         <TextBlock Text="Discover"
                    Foreground="FloralWhite"
                    FontSize="28"
+                   FontWeight="Bold"
                    HorizontalAlignment="Left"
                    Margin="0,0,0,20"/>
         <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,10">
-            <Border Width="400"
+            <Border Width="300"
                     Height="200">
 
                 <Border.Background>
@@ -27,38 +28,17 @@
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
-                                       Rect="0,0,400,200"/>
+                                       Rect="0,0,300,200"/>
                 </Border.Clip>
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Popular Internships&#x0a;right now"
+                        <TextBlock Text="Internships&#x0a;near me"
                                    FontWeight="Bold"
-                                   Foreground="Black"
+                                   Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,10,0"/>
-                        <TextBlock Text="Let's get started!"
-                                   Foreground="White"
-                                   FontSize="18"
-                                   Margin="20,10,10,0"/>
                     </StackPanel>
-
-                    <Image Width="250"
-                           Height="250"
-                           Source="/Images/PopularRightNow.png"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom" Margin="0,0,-27,-68" RenderTransformOrigin="0.5,0.5"
-                           >
-                        <Image.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-7"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Image.RenderTransform>
-                    </Image>
-
                 </Grid>
 
             </Border>
@@ -75,6 +55,16 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Remote&#x0a;Internships"
+                                   FontWeight="Bold"
+                                   Foreground="White"
+                                   FontSize="24"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                </Grid>
+
             </Border>
         </StackPanel>
 
@@ -89,6 +79,7 @@
             <TextBlock Text="Recent"
                    Foreground="FloralWhite"
                    FontSize="20"
+                   FontWeight="Bold"
                    HorizontalAlignment="Left"
                    Margin="0,0,0,10"/>
 
@@ -97,22 +88,76 @@
                         Height="150"
                         Background="#844EFF"
                         CornerRadius="10"
-                        Margin="0"/>
+                        Margin="0">
+                    
+                <StackPanel>
+                    <TextBlock Text="Fall"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="24"
+                               Margin="20,10,10,0"/>
+                    <TextBlock Text="Opportunities"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="16"
+                               Margin="20,0,10,0"/>
+                </StackPanel>
+                    
+                </Border>
 
                 <Border Width="150"
                         Height="150"
                         Background="#ff4e4e"
-                        CornerRadius="10"/>
+                        CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Spring"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="24"
+                               Margin="20,10,10,0"/>
+                        <TextBlock Text="Opportunities"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="16"
+                               Margin="20,0,10,0"/>
+                    </StackPanel>
+                </Border>
 
                 <Border Width="150"
                         Height="150"
-                        Background="#4eff91"
-                        CornerRadius="10"/>
+                        Background="DarkGreen"
+                        CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Winter"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="24"
+                               Margin="20,10,10,0"/>
+                        <TextBlock Text="Opportunities"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="16"
+                               Margin="20,0,10,0"/>
+                    </StackPanel>
+                </Border>
 
                 <Border Width="150"
                         Height="150"
-                        Background="#ecff4e"
-                        CornerRadius="10"/>
+                        Background="CornflowerBlue"
+                        CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Summer"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="24"
+                               Margin="20,10,10,0"/>
+                        <TextBlock Text="Opportunities"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               FontSize="16"
+                               Margin="20,0,10,0"/>
+                    </StackPanel>
+                </Border>
             </StackPanel>
         </StackPanel>
 
