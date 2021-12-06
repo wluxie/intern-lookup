@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:InternLookup.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="460" d:DesignWidth="800">
-    <StackPanel>
+    <StackPanel HorizontalAlignment="Left"
+                VerticalAlignment="Center">
         <TextBlock Text="Discover"
                    Foreground="FloralWhite"
                    FontSize="28"

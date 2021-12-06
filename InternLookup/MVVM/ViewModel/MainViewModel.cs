@@ -11,9 +11,11 @@ namespace InternLookup.MVVM.ViewModel
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand LogoHomeCommand { get; set; }
+        public RelayCommand FeaturedCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public LogoHomeViewModel LogoHomeVM { get; set; }
+        public FeaturedViewModel FeaturedVM { get; set; }
 
         private object varCurentView;
 
@@ -31,11 +33,13 @@ namespace InternLookup.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             LogoHomeVM = new LogoHomeViewModel();
+            FeaturedVM = new FeaturedViewModel();
 
             CurrentView = LogoHomeVM;
 
             HomeViewCommand = new RelayCommand(o => { CurrentView = HomeVM; });
             LogoHomeCommand = new RelayCommand(o => { CurrentView = LogoHomeVM; });
+            FeaturedCommand = new RelayCommand(o => { CurrentView = FeaturedVM; });
         }
     }
 }
