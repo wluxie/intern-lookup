@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InternLookup.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="460" d:DesignWidth="800">
+             d:DesignHeight="500" d:DesignWidth="800">
     <StackPanel HorizontalAlignment="Left"
                 VerticalAlignment="Center">
         <TextBlock Text="Discover"
@@ -13,60 +13,40 @@
                    FontSize="28"
                    FontWeight="Bold"
                    HorizontalAlignment="Left"
-                   Margin="0,0,0,20"/>
+                   Margin="0,0,0,0"/>
         <StackPanel Orientation="Horizontal"
                     Margin="0,0,0,10">
             <Border Width="300"
-                    Height="200">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5BC3FF" Offset="0.0"/>
-                        <GradientStop Color="#3AA0FF" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <Border.Clip>
-                    <RectangleGeometry RadiusX="10"
-                                       RadiusY="10"
-                                       Rect="0,0,300,200"/>
-                </Border.Clip>
-
-                <Grid>
-                    <StackPanel>
-                        <TextBlock Text="Internships&#x0a;near me"
-                                   FontWeight="Bold"
-                                   Foreground="White"
-                                   FontSize="28"
-                                   Margin="20,10,10,0"/>
-                    </StackPanel>
-                </Grid>
-
+                    Height="200"
+                    Background="#3AA0FF"
+                    CornerRadius="10"
+                    Margin="20">
+                <StackPanel>
+                    <Button Content="Internships&#x0a;near me" 
+                            Background="Transparent"
+                            Height="200"
+                            FontSize="28"
+                            BorderThickness="0"
+                            Foreground="White"
+                            FontWeight="Bold" Click="InternNearMe_Button"/>
+                </StackPanel>
             </Border>
 
             <Border Width="200"
                     Height="200"
-                    CornerRadius="10"
-                    Margin="45,0,0,0">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FFC554" Offset="0.0"/>
-                        <GradientStop Color="#FFB73A" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <Grid>
-                    <StackPanel>
-                        <TextBlock Text="Remote&#x0a;Internships"
-                                   FontWeight="Bold"
-                                   Foreground="White"
-                                   FontSize="24"
-                                   Margin="20,10,10,0"/>
-                    </StackPanel>
-                </Grid>
-
+                    Background="#FFB73A"
+                    CornerRadius="10">
+                <StackPanel>
+                    <Button Content="Remote&#x0a;Internships" 
+                            Background="Transparent"
+                            Height="200"
+                            FontSize="28"
+                            BorderThickness="0"
+                            Foreground="White"
+                            FontWeight="Bold" Click="RemoteIntern_Button"/>
+                </StackPanel>
             </Border>
+            
         </StackPanel>
 
         <StackPanel>
@@ -77,7 +57,7 @@
                 </Style>
             </StackPanel.Resources>
 
-            <TextBlock Text="Recent"
+            <TextBlock Text="Seasonal"
                    Foreground="FloralWhite"
                    FontSize="20"
                    FontWeight="Bold"

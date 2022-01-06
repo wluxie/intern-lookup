@@ -11,5 +11,15 @@ namespace InternLookup.MVVM.View
         {
             InitializeComponent();
         }
+
+        private void InternNearMe_Button(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoteIntern_Button(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }

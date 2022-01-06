@@ -89,7 +89,7 @@
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding FeaturedCommand}"/>
-                    <RadioButton Content="Chat"
+                    <RadioButton Content="Browse"
                              Height="60"
                              Foreground="White"
                              FontSize="16"
